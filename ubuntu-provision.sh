@@ -46,10 +46,10 @@ sudo apt update && sudo apt install docker-ce -y
 #
 # Java 11 Oracle
 #
-sudo add-apt-repository ppa:linuxuprising/java
+sudo add-apt-repository -y ppa:linuxuprising/java
 sudo apt update
 echo oracle-java11-installer shared/accepted-oracle-licence-v1-2 boolean true | sudo /usr/bin/debconf-set-selections
-sudo apt install oracle-java11-set-default
+sudo apt install -y oracle-java11-set-default
 
 #sudo nano /etc/environment
 #JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64/bin/"
