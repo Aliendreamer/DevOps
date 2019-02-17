@@ -61,7 +61,7 @@ sudo apt install oracle-java11-set-default
 # nvm [v0.34.0]
 #
 sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
-sudo nvm install
+sudo nvm install 11
 
 # cleanup
 sudo apt autoremove -y && sudo apt autoclean -y
