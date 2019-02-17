@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-sudo apt remove --purge docker-ce oracle-java11-installer
+sudo apt remove --purge -y docker-ce oracle-java11-installer
 
 
 # cleanup
