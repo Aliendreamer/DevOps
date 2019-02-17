@@ -7,7 +7,7 @@ docker-ce \
 python \
 python3.8 \
 oracle-java11-installer \
-oracle-java11-set-default
+oracle-java11-set-default \
 
 
 # cleanup
