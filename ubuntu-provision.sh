@@ -29,7 +29,7 @@ sudo apt update && sudo apt install docker-ce -y
 #
 # Git
 #
-sudo apt install -y git
+#sudo apt install -y git
 
 #
 # Python
@@ -44,11 +44,11 @@ sudo apt install -y git
 #sudo apt install -y python3.8
 
 #
-# Java 10 Oracle
+# Java 11 Oracle
 #
 sudo add-apt-repository ppa:linuxuprising/java
 sudo apt-get update
-sudo echo debconf shared/accepted-oracle-license-v1-1 select true | sudo debconf-set-selections
+sudo echo debconf shared/accepted-oracle-license-v1-1 boolean true | sudo debconf-set-selections
 sudo echo debconf shared/accepted-oracle-license-v1-1 seen true | sudo debconf-set-selections
 sudo apt-get -y install oracle-java11-installer
 sudo apt-get -y install oracle-java11-set-default
@@ -61,7 +61,7 @@ sudo apt-get -y install oracle-java11-set-default
 #
 # NodeJS
 #
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
 
 # cleanup
 sudo apt autoremove -y && sudo apt autoclean -y
