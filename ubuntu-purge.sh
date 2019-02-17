@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-sudo apt remove --purge curl git docker-ce python python3.8 oracle-java11-installer oracle-java11-set-default
+sudo apt remove --purge docker-ce oracle-java11-installer
 
 
 # cleanup
