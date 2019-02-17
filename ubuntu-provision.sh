@@ -22,7 +22,8 @@ sudo add-apt-repository -y \
 sudo apt update && sudo apt install docker-ce -y
 
 # check Docker daemon
-sudo systemctl status docker
+# sudo systemctl status docker
+
 # add current ${USER} to the docker group
 # sudo usermod -aG docker ${USER}
 # su - ${USER}
