@@ -46,8 +46,8 @@ sudo add-apt-repository -y \
 #
 # Java [11] Oracle
 #
-sudo add-apt-repository -y ppa:linuxuprising/java && \
-sudo apt update && \
+sudo add-apt-repository -y ppa:linuxuprising/java
+sudo apt update
 echo oracle-java11-installer shared/accepted-oracle-license-v1-2 select true | sudo /usr/bin/debconf-set-selections && \
 sudo apt-get install -y oracle-java11-installer && \
 sudo apt install oracle-java11-set-default
