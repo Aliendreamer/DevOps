@@ -16,7 +16,7 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository -y \
 "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
 
-#sudo apt update && sudo apt install docker-ce -y
+sudo apt update && sudo apt install -y docker-ce
 
 # check Docker daemon
 #sudo systemctl status docker
@@ -29,7 +29,7 @@ sudo add-apt-repository -y \
 #
 # Git
 #
-#sudo apt install -y git
+sudo apt install -y git
 
 #
 # Python
@@ -39,9 +39,9 @@ sudo add-apt-repository -y \
 # python v3
 #sudo apt install -y python3
 # python newest (3.8)
-#sudo apt update && sudo apt install -y software-properties-common
-#sudo add-apt-repository -y ppa:deadsnakes/ppa
-#sudo apt install -y python3.8
+sudo apt update && sudo apt install -y software-properties-common
+sudo add-apt-repository -y ppa:deadsnakes/ppa
+sudo apt install -y python3.8
 
 #
 # Java [11] Oracle
@@ -52,8 +52,6 @@ echo oracle-java11-installer shared/accepted-oracle-license-v1-2 select true | s
 sudo apt-get install -y oracle-java11-installer && \
 sudo apt install oracle-java11-set-default
 
-#echo oracle-java11-installer shared/accepted-oracle-licence-v1-2 boolean true | sudo /usr/bin/debconf-set-selections
-
 #sudo nano /etc/environment
 #JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64/bin/"
 #source /etc/environment
@@ -62,7 +60,8 @@ sudo apt install oracle-java11-set-default
 #
 # nvm [v0.34.0]
 #
-#sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+sudo nvm install
 
 # cleanup
 sudo apt autoremove -y && sudo apt autoclean -y
