@@ -11,5 +11,7 @@ python3.8 --version
 java --version
 javac --version
 
-npm --version
+echo "node: "
 node --version
+echo "npm: "
+npm --version
