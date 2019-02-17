@@ -5,6 +5,7 @@ python3 --version
 python3.8 --version
 
 java --version
+echo $JAVA_HOME
 
 node  --version
 

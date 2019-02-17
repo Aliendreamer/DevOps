@@ -46,17 +46,32 @@ sudo apt install -y git
 #
 # Java 10 Oracle
 #
-sudo add-apt-repository -y ppa:linuxuprising/java
-sudo apt update && sudo apt install -y oracle-java10-installer && echo oracle-java10-installer shared/accepted-oracle-licence-v1-1 boolean true | sudo /usr/bin/debconf-set-selections
-
-
+sudo add-apt-repository ppa:linuxuprising/java
+sudo apt-get update
+sudo echo debconf shared/accepted-oracle-license-v1-1 select true | sudo debconf-set-selections
+sudo echo debconf shared/accepted-oracle-license-v1-1 seen true | sudo debconf-set-selections
+sudo apt-get -y install oracle-java10-installer
+sudo apt-get -y install oracle-java10-set-default
+#
+# Java Oracle
+#
 
 #sudo add-apt-repository -y ppa:webupd8team/java
+#sudo apt install oracle-java8-installer
+#sudo apt install oracle-java9-installer
 
+#sudo update-alternatives --config java
+#sudo update-alternatives --config javac
+
+#sudo nano /etc/environment
+#JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64/bin/"
+#source /etc/environment
+#echo $JAVA_HOME
 
 #
 # NodeJS
 #
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
 
 # cleanup
 sudo apt autoremove -y && sudo apt autoclean -y
