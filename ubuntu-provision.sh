@@ -35,18 +35,24 @@ sudo apt install -y git
 # Python
 #
 # python v2
-sudo apt install -y python
+#sudo apt install -y python
 # python v3
-sudo apt install -y python3
+#sudo apt install -y python3
 # python newest (3.8)
-sudo apt update && sudo apt install -y software-properties-common
-sudo add-apt-repository -y ppa:deadsnakes/ppa
-sudo apt install -y python3.8
-python3.8 -V
+#sudo apt update && sudo apt install -y software-properties-common
+#sudo add-apt-repository -y ppa:deadsnakes/ppa
+#sudo apt install -y python3.8
 
 #
-# Java
+# Java 10 Oracle
 #
+sudo add-apt-repository -y ppa:linuxuprising/java
+sudo apt update && sudo apt install -y oracle-java10-installer && echo oracle-java10-installer shared/accepted-oracle-licence-v1-1 boolean true | sudo /usr/bin/debconf-set-selections
+
+
+
+#sudo add-apt-repository -y ppa:webupd8team/java
+
 
 #
 # NodeJS
