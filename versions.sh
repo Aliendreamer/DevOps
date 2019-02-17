@@ -5,8 +5,8 @@ python --version
 python3 --version
 python3.8 --version
 
-echo"Git"
+echo "Git"
 git --version
 
-echo"Docker"
+echo "Docker"
 docker --version
