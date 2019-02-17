@@ -16,7 +16,7 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository -y \
 "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
 
-sudo apt update && sudo apt install docker-ce -y
+#sudo apt update && sudo apt install docker-ce -y
 
 # check Docker daemon
 #sudo systemctl status docker
@@ -44,12 +44,12 @@ sudo apt update && sudo apt install docker-ce -y
 #sudo apt install -y python3.8
 
 #
-# Java 11 Oracle
+# Java [11] Oracle
 #
 sudo apt-get update && sudo apt-install -y software-properties-common && \
 sudo add-apt-repository -y ppa:linuxuprising/java && \
 sudo apt-get update && \
-sudo echo oracle-java11-installer shared/accepted-oracle-license-v1-2 select true | sudo /usr/bin/debconf-set-selections && \
+echo oracle-java11-installer shared/accepted-oracle-license-v1-2 select true | sudo /usr/bin/debconf-set-selections && \
 sudo apt-get install -y oracle-java11-installer && \
 sudo apt install oracle-java11-set-default
 #sudo nano /etc/environment
@@ -58,9 +58,9 @@ sudo apt install oracle-java11-set-default
 #echo $JAVA_HOME
 
 #
-# NodeJS
+# nvm [v0.34.0]
 #
-sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+#sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
 
 # cleanup
 sudo apt autoremove -y && sudo apt autoclean -y
