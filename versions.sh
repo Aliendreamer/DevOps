@@ -6,6 +6,7 @@ python3.8 --version
 
 java --version
 echo $JAVA_HOME
+javac --version
 
 node  --version
 
