@@ -34,3 +34,5 @@ sudo apt update && sudo apt install docker-ce -y
 #
 
 sudo apt install -y git
+
+sudo apt autoremove -y && sudo apt autoclean -y
