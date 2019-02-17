@@ -8,7 +8,7 @@ java --version
 echo $JAVA_HOME
 javac --version
 
-node  --version
+nvm  --version
 
 git --version
 
