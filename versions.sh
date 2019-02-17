@@ -11,5 +11,5 @@ python3.8 --version
 java --version
 javac --version
 
-nvm --version
+npm --version
 node --version
